@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: peachpuff;
+  margin: auto;
+}
+
+#craft-list {
+  display: flex;
+  margin: auto;
+}
+
+#content {
+  margin: auto;
+  padding-left: 5%;
+}
+
+.image-container {
+  width: 100%;
+}
+
+#imgSect {
+  margin: 5px;
+}
+
+#add-link {
+  text-decoration: none;
+  color: green;
+  font-size: 50px;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: darkgreen;
+  }
+  50% {
+    color: rgb(110, 183, 110);
+  }
+  100% {
+    color: darkgreen;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.columns {
+  display: flex;
+  flex: 1;
+  gap: 0;
+}
+.columns img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .two-columns div {
+    flex-basis: 50%;
+  }
+}
+
+#img-prev {
+  display: none;
+  width: 50%;
+  height: auto;
+}
+
+.columns-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.craft {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid navy;
+  background: skyblue;
+  width: 90%;
+}
